@@ -16,6 +16,7 @@ public class TelaInicial {
     }
 
     private void createUIComponents() {
+        System.out.println("createUI");
         button1.setText("Ouvir");
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

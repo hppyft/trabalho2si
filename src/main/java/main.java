@@ -1,6 +1,6 @@
 public class main {
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         TelaInicial telaInicial = new TelaInicial();
         telaInicial.show();
     }
