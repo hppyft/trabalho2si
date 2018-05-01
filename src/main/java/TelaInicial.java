@@ -1,10 +1,12 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
 
 public class TelaInicial {
+    private JFrame frame;
     private JPanel panel1;
     private JTextField textField1;
     private JButton button1;
@@ -16,13 +18,18 @@ public class TelaInicial {
     }
 
     private void createUIComponents() {
+        frame = new JFrame("Simple GUI");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         System.out.println("createUI");
         button1.setText("Ouvir");
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
-                    Musica musica = FakeBD.getMusica(Integer.getInteger(textField1.getText()));
+                    Integer integer = Integer.parseInt(textField1.getText());
+                    Musica musica = FakeBD.getMusica(integer);
                     musica.reproduzir();
+                    refreshTable();
                 } catch (NullPointerException n) {
                     JOptionPane.showMessageDialog(panel1, "Por favor, digite um numero dentre os das musicas disponiveis");
                 } catch (Exception x) {
@@ -53,20 +60,32 @@ public class TelaInicial {
             Vector<Object> row = new Vector<Object>();
             row.add(musica.getId());
             row.add(musica.getNome());
-            row.add(FakeBD.getArtista(musica.getIdArtista()));
-            row.add(FakeBD.getGen(musica.getIdGenero()));
+            row.add(FakeBD.getArtista(musica.getIdArtista()).getNome());
+            row.add(FakeBD.getGen(musica.getIdGenero()).getNome());
             row.add(musica.getVezesTocada());
             rows.add(row);
         }
 
-        table1 = new JTable(new DefaultTableModel(rows, titulos));
+        DefaultTableModel dtm = new DefaultTableModel(rows, titulos);
+        table1 = new JTable(dtm);
+
+        frame.getContentPane().add(textField1, BorderLayout.NORTH);
+        frame.getContentPane().add(button1, BorderLayout.WEST);
+        frame.getContentPane().add(table1, BorderLayout.CENTER);
+        frame.getContentPane().add(button2, BorderLayout.EAST);
+        frame.pack();
     }
 
     public void show() {
-        panel1.setVisible(true);
+        frame.setVisible(true);
     }
 
     public void hide() {
-        panel1.setVisible(false);
+        frame.setVisible(false);
+    }
+
+    public void refreshTable() {
+//        ((DefaultTableModel) table1.getModel()).fireTableDataChanged();
+        table1.repaint(); //TODO Verificar como dar refresh na table
     }
 }
