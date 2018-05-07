@@ -29,7 +29,7 @@ public class TelaInicial {
                     Integer integer = Integer.parseInt(textField1.getText());
                     Musica musica = FakeBD.getMusica(integer);
                     musica.reproduzir();
-                    refreshTable();
+                    createTable();
                 } catch (NullPointerException n) {
                     JOptionPane.showMessageDialog(panel1, "Por favor, digite um numero dentre os das musicas disponiveis");
                 } catch (Exception x) {
@@ -41,12 +41,20 @@ public class TelaInicial {
         button2.setText("Recomendar música");
         button2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //TODO abrir uma dialog recomendando a musica
+                JOptionPane.showMessageDialog(panel1, FakeBD.getRecomendacao());
             }
         });
 
         textField1.setText("Digite aqui o id da musica que voce quer escutar");
 
+
+        frame.getContentPane().add(textField1, BorderLayout.NORTH);
+        frame.getContentPane().add(button1, BorderLayout.WEST);
+        frame.getContentPane().add(button2, BorderLayout.EAST);
+        createTable();
+    }
+
+    private void createTable() {
         Vector<String> titulos = new Vector<String>();
         titulos.add("Id");
         titulos.add("Nome");
@@ -68,11 +76,7 @@ public class TelaInicial {
 
         DefaultTableModel dtm = new DefaultTableModel(rows, titulos);
         table1 = new JTable(dtm);
-
-        frame.getContentPane().add(textField1, BorderLayout.NORTH);
-        frame.getContentPane().add(button1, BorderLayout.WEST);
         frame.getContentPane().add(table1, BorderLayout.CENTER);
-        frame.getContentPane().add(button2, BorderLayout.EAST);
         frame.pack();
     }
 

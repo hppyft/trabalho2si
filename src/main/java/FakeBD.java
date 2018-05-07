@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.util.*;
+
 public class FakeBD {
 
     private static Genero gen1;
@@ -126,4 +129,40 @@ public class FakeBD {
         return musicas;
     }
 
+    public static String getRecomendacao() {
+        List<Musica> allMusicas = new LinkedList<Musica>(Arrays.asList(FakeBD.getAllMusicas()));
+        List<Musica> musicasNaoEscutadas = new ArrayList<Musica>();
+        List<Musica> musicasEscutadas = new ArrayList<Musica>();
+        for (Musica musicaEscutada : allMusicas) {
+            if (musicaEscutada.getVezesTocada() == 0) {
+                musicasNaoEscutadas.add(musicaEscutada);
+            } else {
+                musicasEscutadas.add(musicaEscutada);
+            }
+        }
+        if (musicasEscutadas.isEmpty()) {
+            return "Você não escutou nenhuma música, por favor escute alguma para que possamos recomendar algo";
+        }
+        if (musicasNaoEscutadas.isEmpty()) {
+            return "Você já escutou todas as músicas, não há nenhuma para recomendar";
+        }
+        Collections.sort(musicasEscutadas, new Comparator<Musica>() {
+            public int compare(Musica musica, Musica t1) {
+                return musica.compareTo(t1);
+            }
+        });
+        for (Musica musica : musicasEscutadas) {
+            for (Musica musica2 : musicasNaoEscutadas) {
+                if (musica.getIdArtista() == musica2.getIdArtista()) {
+                    return "Recomendamos que você escute a música " + musica2.getNome() + " baseado no artista que você escutou anteriormente";
+                }
+            }
+            for (Musica musica3 : musicasNaoEscutadas) {
+                if (musica.getIdGenero() == musica3.getIdGenero()) {
+                    return "Recomendamos que você escute a música " + musica3.getNome() + " baseado no gênero que você escutou anteriormente";
+                }
+            }
+        }
+        return "Não possuimos nenhuma recomendação";
+    }
 }

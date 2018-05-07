@@ -1,4 +1,4 @@
-public class Musica {
+public class Musica implements Comparable<Musica> {
 
     private int id;
     private String nome;
@@ -39,5 +39,15 @@ public class Musica {
 
     public long getVezesTocada() {
         return vezesTocada;
+    }
+
+    public int compareTo(Musica o) {
+        if (this.vezesTocada > o.vezesTocada) {
+            return -1;
+        } else if (this.vezesTocada < o.vezesTocada) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }
