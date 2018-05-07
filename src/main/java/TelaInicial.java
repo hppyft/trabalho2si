@@ -18,7 +18,7 @@ public class TelaInicial {
     }
 
     private void createUIComponents() {
-        frame = new JFrame("Simple GUI");
+        frame = new JFrame("Pseudoreprodutor de músicas");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         System.out.println("createUI");
@@ -55,15 +55,15 @@ public class TelaInicial {
     }
 
     private void createTable() {
-        Vector<String> titulos = new Vector<String>();
-        titulos.add("Id");
-        titulos.add("Nome");
-        titulos.add("Artista");
-        titulos.add("Genero");
-        titulos.add("Vezes Tocadas");
-
         Musica[] musicas = FakeBD.getAllMusicas();
         Vector<Vector<Object>> rows = new Vector<Vector<Object>>();
+        Vector<Object> firstRow = new Vector<Object>();
+        firstRow.add("Id");
+        firstRow.add("Nome");
+        firstRow.add("Artista");
+        firstRow.add("Genero");
+        firstRow.add("Vezes Tocadas");
+        rows.add(firstRow);
         for (Musica musica : musicas) {
             Vector<Object> row = new Vector<Object>();
             row.add(musica.getId());
@@ -74,7 +74,7 @@ public class TelaInicial {
             rows.add(row);
         }
 
-        DefaultTableModel dtm = new DefaultTableModel(rows, titulos);
+        DefaultTableModel dtm = new DefaultTableModel(rows, firstRow);
         table1 = new JTable(dtm);
         frame.getContentPane().add(table1, BorderLayout.CENTER);
         frame.pack();

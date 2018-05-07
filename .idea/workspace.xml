@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="trabalho2si:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2325c3f9-4780-4c5a-bade-11f889fe7bd5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/trabalho2si_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/trabalho2si_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FakeBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FakeBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/trabalho2si_jar/trabalho2si.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TelaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TelaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TelaInicial$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TelaInicial$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TelaInicial$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TelaInicial$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TelaInicial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TelaInicial.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FakeBD.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FakeBD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FakeBD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="159" column="56" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="56" />
+            <state relative-caret-position="978">
+              <caret line="139" column="53" selection-start-line="139" selection-start-column="53" selection-end-line="139" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4004#4012#0" expanded="true" />
@@ -61,19 +63,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TelaInicial.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TelaInicial.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TelaInicial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="43" column="80" lean-forward="true" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
+            <state relative-caret-position="213">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#702#1492#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
-                <element signature="e#1466#1712#0" expanded="true" />
-                <element signature="e#1711#1712#0" expanded="true" />
-                <element signature="e#2107#2115#0" expanded="true" />
+                <element signature="e#719#1399#0" expanded="true" />
+                <element signature="e#1398#1399#0" expanded="true" />
+                <element signature="e#1483#1667#0" expanded="true" />
+                <element signature="e#1666#1667#0" expanded="true" />
                 <element signature="e#2376#2392#0" expanded="true" />
+                <element signature="e#2388#2396#0" expanded="true" />
                 <element signature="e#2479#2487#0" expanded="true" />
                 <element signature="e#3006#3007#0" expanded="true" />
                 <element signature="e#3044#3045#0" expanded="true" />
@@ -116,8 +118,8 @@
         <option value="$PROJECT_DIR$/src/main/java/TelaInicial.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Musica.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TelaInicial.java" />
         <option value="$PROJECT_DIR$/src/main/java/FakeBD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TelaInicial.java" />
       </list>
     </option>
   </component>
@@ -295,7 +297,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -376,12 +377,12 @@
           <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#702#1492#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="e#1466#1712#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#2107#2115#0" expanded="true" />
+            <element signature="e#719#1399#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1483#1667#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
             <element signature="e#2376#2392#0" expanded="true" />
+            <element signature="e#2388#2396#0" expanded="true" />
             <element signature="e#2479#2487#0" expanded="true" />
             <element signature="e#3006#3007#0" expanded="true" />
             <element signature="e#3044#3045#0" expanded="true" />
@@ -404,12 +405,12 @@
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#702#1492#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="e#1466#1712#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#2107#2115#0" expanded="true" />
+            <element signature="e#719#1399#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1483#1667#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
             <element signature="e#2376#2392#0" expanded="true" />
+            <element signature="e#2388#2396#0" expanded="true" />
             <element signature="e#2479#2487#0" expanded="true" />
             <element signature="e#3006#3007#0" expanded="true" />
             <element signature="e#3044#3045#0" expanded="true" />
@@ -446,12 +447,12 @@
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#702#1492#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="e#1466#1712#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#2107#2115#0" expanded="true" />
+            <element signature="e#719#1399#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1483#1667#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
             <element signature="e#2376#2392#0" expanded="true" />
+            <element signature="e#2388#2396#0" expanded="true" />
             <element signature="e#2479#2487#0" expanded="true" />
             <element signature="e#3006#3007#0" expanded="true" />
             <element signature="e#3044#3045#0" expanded="true" />
@@ -487,27 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TelaInicial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="43" column="80" lean-forward="true" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#702#1492#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="e#1466#1712#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#2107#2115#0" expanded="true" />
-            <element signature="e#2376#2392#0" expanded="true" />
-            <element signature="e#2479#2487#0" expanded="true" />
-            <element signature="e#3006#3007#0" expanded="true" />
-            <element signature="e#3044#3045#0" expanded="true" />
-            <element signature="e#3070#3071#0" expanded="true" />
-            <element signature="e#3109#3110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Musica.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -531,8 +511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FakeBD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="159" column="56" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="56" />
+        <state relative-caret-position="978">
+          <caret line="139" column="53" selection-start-line="139" selection-start-column="53" selection-end-line="139" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4004#4012#0" expanded="true" />
@@ -544,16 +524,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TelaInicial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#719#1399#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1483#1667#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
+            <element signature="e#2376#2392#0" expanded="true" />
+            <element signature="e#2388#2396#0" expanded="true" />
+            <element signature="e#2479#2487#0" expanded="true" />
+            <element signature="e#3006#3007#0" expanded="true" />
+            <element signature="e#3044#3045#0" expanded="true" />
+            <element signature="e#3070#3071#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>trabalho2si:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -561,7 +564,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -608,7 +611,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited />
+          <last-edited>IntelliJ IDEA Community Edition IC-181.4203.550</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
